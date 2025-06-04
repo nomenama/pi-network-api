@@ -6,14 +6,13 @@ import {
   Operation,
   Asset,
   Memo,
-  Networks,
 } from '@stellar/stellar-sdk';
 import dotenv from 'dotenv';
 
 dotenv.config();
 const router = Router();
 
-const HORIZON_SERVER = process.env.HORIZON_SERVER || '';
+const HORIZON_SERVER = process.env.HORIZON_SERVER || "https://api.mainnet.minepi.com";
 const NETWORK_PASSPHRASE = 'Pi Network';
 const BASE_FEE = 1000000;
 
